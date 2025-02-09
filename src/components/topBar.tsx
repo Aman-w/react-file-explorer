@@ -78,7 +78,6 @@ const Topbar: React.FC<TopbarProps> = ({ onAddFolder }) => {
     <TopbarContainer>
       <LeftSection>
         
-        {/* Navigation icons */}
         <IconButton title="Back">
           <FaArrowLeft />
         </IconButton>
@@ -87,14 +86,12 @@ const Topbar: React.FC<TopbarProps> = ({ onAddFolder }) => {
         </IconButton>
         <Title>Downloads</Title>
 
-
-        {/* Title */}
       </LeftSection>
       <RightSection>
       <IconButton title="Up">
           <FaArrowUp />
         </IconButton>
-        {/* View icons */}
+
         <IconButton title="Grid View">
           <FaThLarge />
         </IconButton>
@@ -107,7 +104,7 @@ const Topbar: React.FC<TopbarProps> = ({ onAddFolder }) => {
         <IconButton title="More Views">
           <FaGripHorizontal />
         </IconButton>
-        {/* Search and action icons */}
+
         <IconButton title="Search">
           <FaSearch />
         </IconButton>

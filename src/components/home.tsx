@@ -52,7 +52,7 @@ const Home: React.FC = () => {
 
     const draggedFolder = folders.find(f => f.id === result.draggableId);
     if (!draggedFolder) return;
-      dispatch(reorderFolders({ sourceIndex: source.index, destinationIndex: destination.index }));
+    dispatch(reorderFolders({ sourceIndex: source.index, destinationIndex: destination.index }));
   };
 
   return (

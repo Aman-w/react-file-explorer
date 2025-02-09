@@ -45,9 +45,8 @@ const TagItem = styled(Item)`
 const Sidebar: React.FC = () => {
   const dispatch = useDispatch();
 
-  // Handle folder selection
   const handleFolderClick = (folderId: string) => {
-    dispatch(selectFolder(folderId)); // Dispatch the action with the selected folder ID
+    dispatch(selectFolder(folderId));
   };
 
   return (

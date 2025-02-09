@@ -10,12 +10,12 @@ interface Folder {
 
 interface FolderState {
   folders: Folder[];
-  selectedFolderId: string | null;  // New state to track the selected folder
+  selectedFolderId: string | null; 
   }
 
 const initialState: FolderState = {
   folders: [{ id: "file-1", name: "Default File.txt", type: "file" }],
-  selectedFolderId: null, // Initialize as null
+  selectedFolderId: null, 
 };
 
 const findFolderById = (folders: Folder[], id: string): Folder | undefined => {
@@ -85,7 +85,7 @@ const folderSlice = createSlice({
     },
 
     selectFolder: (state, action: PayloadAction<string | null>) => {
-      state.selectedFolderId = action.payload; // Update selected folder ID
+      state.selectedFolderId = action.payload;
     },
 
   },
